@@ -3,11 +3,11 @@
     "ENV": {
       "name": "development",
       "elasticsearch": {
-        "host": "http://localhost:9300",
+        "host": "http://answer-test2.biohpc.swmed.edu:9300"
         "index": "staging"
       },
       "api": {
-        "host": "http://localhost:5000",
+        "host": "http://answer-test2.biohpc.swmed.edu:5000",
         "endpoint": "/api"
       },
       "samlAuthentication": false,
@@ -30,11 +30,11 @@
       "resources": {
         "oncpro_base": "",
         "ctgov_base": "https://clinicaltrials.gov/ct2/show/",
-        "logo": "dfci.jpg",
+        "logo": "utsw-master-logo-blue-lg.png",
          "institution": "DEFAULT",
-        "institutionFull": "Replace with your institute name",
-        "email": "info@yourInstitute.com",
-        "emailSecondary": "info2@yourInstitute.com"
+        "institutionFull": "UT Southwestern Medical Center",
+        "email": "ngsclialab@utsouthwestern.edu",
+        "emailSecondary": "benjamin.wakeland@utsouthwestern.edu"
       },
       "EPIC": false,
       "cBio": false
@@ -44,12 +44,12 @@
     "ENV": {
       "name": "staging",
       "elasticsearch": {
-        "host": "http://localhost:9300",
+        "host": "http://answer-test2.biohpc.swmed.edu:9300",
         "index": "staging"
       },
       "api": {
-        "host": "http://localhost:5000",
-        "endpoint": "http://localhost:5000/api"
+        "host": "http://answer-test2.biohpc.swmed.edu:5000",
+        "endpoint": "http://answer-test2.biohpc.swmed.edu:5000/api"
       },
       "samlAuthentication": true,
       "certificate" : {
@@ -67,11 +67,11 @@
       "resources": {
         "oncpro_base": "",
         "ctgov_base": "https://clinicaltrials.gov/ct2/show/",
-        "logo": "dfci.jpg",
+        "logo": "utsw-master-logo-blue-lg.png",
          "institution": "DEFAULT",
-        "institutionFull": "Replace with your institute name",
-        "email": "info@yourInstitute.com",
-        "emailSecondary": "info2@yourInstitute.com"
+        "institutionFull": "UT Southwestern Medical Center",
+        "email": "ngsclialab@utsouthwestern.edu",
+        "emailSecondary": "benjamin.wakeland@utsouthwestern.edu"
       },
       "EPIC": false,
       "cBio": false
@@ -81,12 +81,12 @@
     "ENV": {
       "name": "production",
       "elasticsearch": {
-        "host": "http://localhost:9300",
+        "host": "http://answer-test2.biohpc.swmed.edu:9300",
         "index": "matchminer"
       },
       "api": {
-        "host": "http://localhost:5000",
-        "endpoint": "http://localhost:5000/api"
+        "host": "http://answer-test2.biohpc.swmed.edu:5000",
+        "endpoint": "http://answer-test2.biohpc.swmed.edu:5000/api"
       },
       "samlAuthentication": true,
       "certificate" : {
@@ -104,11 +104,11 @@
       "resources": {
         "oncpro_base": "",
         "ctgov_base": "https://clinicaltrials.gov/ct2/show/",
-        "logo": "dfci.jpg",
+        "logo": "utsw-master-logo-blue-lg.png",
          "institution": "DEFAULT",
-        "institutionFull": "Replace with your institute name",
-        "email": "info@yourInstitute.com",
-        "emailSecondary": "info2@yourInstitute.com"
+        "institutionFull": "UT Southwestern Medical Center",
+        "email": "ngsclialab@utsouthwestern.edu",
+        "emailSecondary": "benjamin.wakeland@utsouthwestern.edu"
       },
       "EPIC": false,
       "cBio": false
