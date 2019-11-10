@@ -1,0 +1,22 @@
+# pull base node image.
+FROM node:8
+
+COPY . /matchminer-ui
+WORKDIR /matchminer-ui
+
+RUN apt-get update && \
+    apt-get -y install libfontconfig
+
+ # install phantomjs globally
+RUN npm install -g phantomjs-prebuilt
+ENV PHANTOMJS_BIN "/usr/local/bin/phantomjs"
+
+ # install dependencies globally and with package.json
+RUN npm install && \
+    bower install --config.interactive=false  --allow-root && \
+    gulp --env production build
+
+COPY build/UI/config.json properties/config.json
+RUN gulp --env dev build
+WORKDIR /matchminer-ui/dist
+ENTRYPOINT http-server -g
